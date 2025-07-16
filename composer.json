@@ -1,0 +1,15 @@
+{
+    "name": "filipeus-san/psqt",
+    "autoload": {
+        "psr-4": {
+            "FilipeusSan\\Psqt\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Filipeus",
+            "email": "filipeus.san@gmail.com"
+        }
+    ],
+    "require": {}
+}

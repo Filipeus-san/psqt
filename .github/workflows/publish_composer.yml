@@ -1,0 +1,16 @@
+
+stages:
+  - release
+
+publish_composer_package:
+  stage: release
+  image: curlimages/curl:latest
+  script:
+    - >
+      curl -X POST 
+      -H "Accept: application/json" 
+      -H "Content-Type: application/json" 
+      -d "{\"repository\":{\"url\":\"https://github.com/Filipeus-san/psqt\"}}" 
+      "https://packagist.org/api/update-package?username=$PACKAGIST_USERNAME&apiToken=$PACKAGIST_TOKEN"
+  only:
+    - tags
