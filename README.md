@@ -4,7 +4,19 @@ Nástroj pro generování PHP data objektů  z SQL dotazů. PSQT skenuje php sou
     - přímého připojení do DB
     - z databázových migrací 
 
-### Spuštění příkazová řádka
+
+### Instalce a spuštění
+- Přes composer balíček
+```
+composer require filipeus-san/psqt
+```
+
+- Přes docker
+```
+docker ...
+```
+
+### Nápověda - příkazová řádka
 - generování DTO
 
 ```
