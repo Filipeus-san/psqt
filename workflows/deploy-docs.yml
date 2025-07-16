@@ -1,0 +1,23 @@
+name: Deploy Docsify to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # nebo tvá hlavní větev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    # Nemusíš buildovat, protože Docsify je client-side
+    # Jen zkopíruj dokumentaci do docs/ nebo rootu
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs  
