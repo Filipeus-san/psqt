@@ -23,10 +23,11 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build Docker image
+      - name: Build Docker images
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/psqt:${{ env.TAG }} .
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/psqt:${{ env.TAG }} -t ${{ secrets.DOCKERHUB_USERNAME }}/psqt:latest .
 
-      - name: Push Docker image
+      - name: Push Docker images
         run: |
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/psqt:${{ env.TAG }}
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/psqt:latest
