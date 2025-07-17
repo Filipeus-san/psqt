@@ -1,4 +1,5 @@
 <img src="./docs/logo.png" alt="psqt logo" width="200"/>
+
 # psqt
 - Kompletní dokumentace
     - https://filipeus-san.github.io/psqt
