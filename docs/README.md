@@ -9,6 +9,7 @@ Nástroj pro generování PHP data objektů  z SQL dotazů. PSQT skenuje php sou
 - Přes composer balíček
 ```
 composer require filipeus-san/psqt
+./vendor/bin/psqt
 ```
 
 - Přes docker
