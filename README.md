@@ -1,3 +1,5 @@
+#psqt
+
 <img src="./docs/logo.png" alt="psqt logo" width="200"/>
 
 - Kompletní dokumentace
