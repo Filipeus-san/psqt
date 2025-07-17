@@ -1,4 +1,4 @@
-# Home
+# psqt
 
 <img src="./logo.png" alt="psqt logo" width="200"/>
 
