@@ -6,9 +6,6 @@
             "email": "filipeus.san@gmail.com"
         }
     ],
-    "bin": ["bin/psqt"],
-    "scripts": {
-        "psqt": "psqt"
-    },        
+    "bin": ["bin/psqt"],        
     "require": {}
 }
