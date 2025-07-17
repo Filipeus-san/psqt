@@ -17,7 +17,7 @@ composer require filipeus-san/psqt
 
 - Přes docker
 ```
-docker pull filipeus513/psqt:0.0.3
+docker run --rm filipeus513/psqt:0.0.5 psqt
 ```
 
 ### Nápověda - příkazová řádka
