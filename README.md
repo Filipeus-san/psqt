@@ -1,3 +1,4 @@
+![psqt logo](./docs/logo.png)
 # psqt
 - Kompletní dokumentace
     - https://filipeus-san.github.io/psqt
