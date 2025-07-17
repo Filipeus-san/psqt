@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+$os = PHP_OS_FAMILY;
+
+$bin = match ($os) {
+    'Windows' => __DIR__ . '/muj-prikaz-win.exe',
+    'Darwin'  => __DIR__ . '/muj-prikaz-macos',
+    'Linux'   => __DIR__ . '/psqt-linux',
+    default   => null
+};
+
+if ($bin === null || !file_exists($bin)) {
+    fwrite(STDERR, "Unsupported operating system: $os\n");
+    exit(1);
+}
+
+passthru(escapeshellarg($bin) . ' ' . implode(' ', array_map('escapeshellarg', array_slice($argv, 1))));
