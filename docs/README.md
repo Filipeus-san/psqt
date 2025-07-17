@@ -1,4 +1,4 @@
-![psqt logo](./docs/logo.png)
+<img src="./docs/logo.png" alt="psqt logo" width="200"/>
 ## PSQT
 Nástroj pro generování PHP data objektů  z SQL dotazů. PSQT skenuje php soubory a pomocí statické analýzi SQL dotazů a schématu databáze generuje DTO nebo PHPStan anotace
  - ke schématu přistupuje pomocí
