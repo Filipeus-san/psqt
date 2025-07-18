@@ -20,6 +20,13 @@ composer require filipeus-san/psqt
 docker run --rm filipeus513/psqt:latest psqt
 ```
 
+## Inicializace
+Vytvoří se configurační soubor pro psqt
+- Přes composer balíček
+```
+./vendor/bin/psqt init
+```
+
 ### Nápověda - příkazová řádka
 - generování DTO
 
