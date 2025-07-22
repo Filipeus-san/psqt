@@ -7,6 +7,11 @@ Nástroj pro generování PHP data objektů  z SQL dotazů. PSQT skenuje php sou
     - přímého připojení do DB
     - z databázových migrací 
 
+<video controls width="640" height="360">
+  <source src="example.webm" type="video/webm">
+  Váš prohlížeč nepodporuje přehrávání videa.
+</video>
+
 
 ### Instalce a spuštění
 - Přes composer balíček
