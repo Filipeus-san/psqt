@@ -2,24 +2,15 @@
 
 <img src="./logo.png" alt="psqt logo" width="200"/>
 
-Nástroj pro generování PHP data objektů  z SQL dotazů. PSQT skenuje php soubory a pomocí statické analýzi SQL dotazů a schématu databáze generuje DTO nebo PHPStan anotace
- - ke schématu přistupuje pomocí
-    - přímého připojení do DB
-    - z databázových migrací 
+Nástroj pro generování PHP data objektů  z SQL dotazů. PSQT skenuje php soubory a pomocí statické analýzi SQL dotazů a schématu databáze generuje DTO.
+ - ke schématu přistupuje pomocí přímého připojení do DB
+ - generování data objektů lze detailně konfigurovat v psqt.yaml
+ - watch režim, který při změně souboru přegeneruje DTO
 
 <video id="myVideo" autoplay muted loop controls width="640" height="360">
   <source src="example.webm" type="video/webm">
   Váš prohlížeč nepodporuje přehrávání videa.
 </video>
-
-<script>
-  // Po půl vteřině nastavíme rychlost na 2×
-  setTimeout(() => {
-   const video = document.getElementById('myVideo'); 
-   video.playbackRate = 2.0;
-    console.log('Rychlost nastavena na:', video.playbackRate);
-  }, 1000); // můžeš upravit podle potřeby (např. 1000 = 1 sekunda)
-</script>
 
 ### Instalce a spuštění
 - Přes composer balíček
