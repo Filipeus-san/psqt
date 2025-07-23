@@ -13,14 +13,13 @@ Nástroj pro generování PHP data objektů  z SQL dotazů. PSQT skenuje php sou
 </video>
 
 <script>
-  const video = document.getElementById('myVideo');
-
-  video.addEventListener('loadedmetadata', () => {
-    video.playbackRate = 2.0;
-    console.log('playbackRate nastaven na:', video.playbackRate);
-  });
+  // Po půl vteřině nastavíme rychlost na 2×
+  setTimeout(() => {
+   const video = document.getElementById('myVideo'); 
+   video.playbackRate = 2.0;
+    console.log('Rychlost nastavena na:', video.playbackRate);
+  }, 1000); // můžeš upravit podle potřeby (např. 1000 = 1 sekunda)
 </script>
-
 
 ### Instalce a spuštění
 - Přes composer balíček
