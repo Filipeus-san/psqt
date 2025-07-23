@@ -14,13 +14,13 @@ Nástroj pro generování PHP data objektů  z SQL dotazů.
 </video>
 
 ### Instalce a spuštění
-- Přes composer balíček
+- [Přes composer balíček](https://packagist.org/packages/filipeus-san/psqt)
 ```
 composer require filipeus-san/psqt
 ./vendor/bin/psqt
 ```
 
-- Přes docker
+- [Přes docker](https://hub.docker.com/r/filipeus513/psqt)
 ```
 docker run --rm filipeus513/psqt:latest psqt
 ```
