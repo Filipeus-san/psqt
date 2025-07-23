@@ -2,7 +2,8 @@
 
 <img src="./logo.png" alt="psqt logo" width="200"/>
 
-Nástroj pro generování PHP data objektů  z SQL dotazů. PSQT skenuje php soubory a pomocí statické analýzi SQL dotazů a schématu databáze generuje DTO.
+Nástroj pro generování PHP data objektů  z SQL dotazů.
+ - skenuje php soubory a pomocí statické analýzi SQL dotazů a schématu databáze generuje DTO
  - ke schématu přistupuje pomocí přímého připojení do DB
  - generování data objektů lze detailně konfigurovat v psqt.yaml
  - watch režim, který při změně souboru přegeneruje DTO
