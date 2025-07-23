@@ -12,10 +12,14 @@ Nástroj pro generování PHP data objektů  z SQL dotazů. PSQT skenuje php sou
   Váš prohlížeč nepodporuje přehrávání videa.
 </video>
 
-  <script>
-    const video = document.getElementById('myVideo');
-    video.playbackRate = 2.0; // Nastaví přehrávání na dvojnásobnou rychlost
-  </script>
+<script>
+  const video = document.getElementById('myVideo');
+
+  // Po načtení metadat (např. délka videa) nastavíme rychlost
+  video.addEventListener('loadedmetadata', () => {
+    video.playbackRate = 2.0;
+  });
+</script>
 
 
 ### Instalce a spuštění
