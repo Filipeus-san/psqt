@@ -2,25 +2,30 @@
 
 <img src="./logo.png" alt="psqt logo" width="200"/>
 
-Nástroj pro generování PHP data objektů  z SQL dotazů.
- - skenuje php soubory a pomocí statické analýzi SQL dotazů a schématu databáze generuje DTO
- - ke schématu přistupuje pomocí přímého připojení do DB
- - generování data objektů lze detailně konfigurovat v psqt.yaml
- - watch režim, který při změně souboru přegeneruje DTO
+Nástroj pro generování PHP data objektů  z SQL dotazů. PSQT skenuje php soubory a pomocí statické analýzi SQL dotazů a schématu databáze generuje DTO nebo PHPStan anotace
+ - ke schématu přistupuje pomocí
+    - přímého připojení do DB
+    - z databázových migrací 
 
 <video id="myVideo" autoplay muted loop controls width="640" height="360">
   <source src="example.webm" type="video/webm">
   Váš prohlížeč nepodporuje přehrávání videa.
 </video>
 
+  <script>
+    const video = document.getElementById('myVideo');
+    video.playbackRate = 2.0; // Nastaví přehrávání na dvojnásobnou rychlost
+  </script>
+
+
 ### Instalce a spuštění
-- [Přes composer balíček](https://packagist.org/packages/filipeus-san/psqt)
+- Přes composer balíček
 ```
 composer require filipeus-san/psqt
 ./vendor/bin/psqt
 ```
 
-- [Přes docker](https://hub.docker.com/r/filipeus513/psqt)
+- Přes docker
 ```
 docker run --rm filipeus513/psqt:latest psqt
 ```
