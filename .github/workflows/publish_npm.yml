@@ -28,8 +28,5 @@ jobs:
           echo "Updating package.json version to $TAG_VERSION"
           npm version $TAG_VERSION --no-git-tag-version
 
-      - name: Install dependencies
-        run: npm install
-
       - name: Publish to npm
         run: npm publish
