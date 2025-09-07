@@ -1,0 +1,24 @@
+{
+  "name": "psqt",
+  "description": "<img src=\"./docs/logo.png\" alt=\"psqt logo\" width=\"200\"/>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "bin": {
+    "psqt": "./index.js"
+  },
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Filipeus-san/psqt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Filipeus-san/psqt/issues"
+  },
+  "homepage": "https://github.com/Filipeus-san/psqt#readme"
+}
