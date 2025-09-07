@@ -19,8 +19,13 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org/
 
-      - name: Authenticate to npm
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_PUBLISH_TOKEN }}" > ~/.npmrc
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+          always-auth: true
+          auth-token: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
       - name: Sync package.json version with Git tag
         run: |
