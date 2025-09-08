@@ -13,13 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js and authenticate to npm
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
-          always-auth: true
-          auth-token: ${{ secrets.NPM_PUBLISH_TOKEN }}
+      - name: Authenticate to npm
+              run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_PUBLISH_TOKEN }}" > ~/.npmrc && cat ~/.npmrc
 
       - name: Sync package.json version with Git tag
         run: |
