@@ -1,7 +1,6 @@
 {
   "name": "psqt",
-  "version": "0.0.11",
-  "description": "A tool for generating PHP data objects from SQL queries. Psqt scans PHP files and uses static analysis of SQL queries and the database schema.",
+  "description": "A tool for generating types and data objects from SQL queries. Psqt scans files and uses static analysis of SQL queries and the database schema from sql migrations.",
   "main": "index.mjs",
   "type": "module",
   "directories": {
