@@ -17,7 +17,7 @@ const os = platform(); // 'win32', 'darwin', 'linux', ...
 let bin;
 switch (os) {
   case 'win32':
-    bin = path.join(__dirname, './bin/muj-prikaz-win.exe');
+    bin = path.join(__dirname, './bin/psqt-win.exe');
     break;
   case 'darwin':
     bin = path.join(__dirname, './bin/muj-prikaz-macos');

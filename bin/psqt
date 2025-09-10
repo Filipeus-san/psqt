@@ -4,7 +4,7 @@
 $os = PHP_OS_FAMILY;
 
 $bin = match ($os) {
-    'Windows' => __DIR__ . '/muj-prikaz-win.exe',
+    'Windows' => __DIR__ . '/psqt-win.exe',
     'Darwin'  => __DIR__ . '/muj-prikaz-macos',
     'Linux'   => __DIR__ . '/psqt-linux',
     default   => null
